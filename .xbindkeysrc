@@ -1,0 +1,10 @@
+"xdotool key 'Alt_L+Left'"
+	b:20
+"xdotool key 'Alt_L+Right'"
+	b:21
+"xdotool key 'Control+w'"
+	b:13
+"xdotool key 'Control+Shift+Tab'"
+	b:15
+"xdotool key 'Control+Tab'"
+	b:14
