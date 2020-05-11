@@ -12,6 +12,7 @@ https://www.nvidia.com/en-us/drivers/unix/
 
 
 create file with the following content /etc/modprobe.d/blacklist-nvidia-nouveau.conf
+```
 blacklist nouveau
 options nouveau modeset=0
-
+```
