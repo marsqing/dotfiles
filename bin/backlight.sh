@@ -16,5 +16,5 @@ if [[ $new -ge 26666 ]] {
 	sleep 1
 	xset dpms force off
 } else {
-	sudo echo $new > /sys/class/backlight/intel_backlight/brightness
+	echo $new | sudo tee /sys/class/backlight/intel_backlight/brightness
 }
