@@ -16,3 +16,8 @@ create file with the following content /etc/modprobe.d/blacklist-nvidia-nouveau.
 blacklist nouveau
 options nouveau modeset=0
 ```
+
+for mtrack to work properly, add user to input group and restart
+```
+usermod -a -G input marsqing
+```
