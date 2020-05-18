@@ -210,6 +210,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # brightness control
 bindcode 95 exec $HOME/bin/backlight.sh -
 bindcode 96 exec $HOME/bin/backlight.sh +
+bindcode 68 exec pulseaudio-ctl down
+bindcode 69 exec pulseaudio-ctl up
 bindsym $mod+b exec $HOME/bin/backlight.sh 0
 bindsym $mod+Shift+b exec $HOME/bin/backlight.sh 26666
 
