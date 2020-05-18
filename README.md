@@ -21,3 +21,11 @@ for mtrack to work properly, add user to input group and restart
 ```
 usermod -a -G input marsqing
 ```
+
+if pacmd list-cards show no sound card, edit /etc/default/grub and add snd_hda_intel.dmic_detect=0
+```
+GRUB_CMDLINE_LINUX_DEFAULT="... snd_hda_intel.dmic_detect=0"
+```
+then
+grub-mkconfig -o /boot/grub/grub.cfg
+reboot
